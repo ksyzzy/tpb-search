@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/tpb-search/static/css/main.c633f539.chunk.css",
-    "main.js": "/tpb-search/static/js/main.8de8ebef.chunk.js",
-    "main.js.map": "/tpb-search/static/js/main.8de8ebef.chunk.js.map",
+    "main.js": "/tpb-search/static/js/main.77d89f0a.chunk.js",
+    "main.js.map": "/tpb-search/static/js/main.77d89f0a.chunk.js.map",
     "runtime-main.js": "/tpb-search/static/js/runtime-main.213bb9d4.js",
     "runtime-main.js.map": "/tpb-search/static/js/runtime-main.213bb9d4.js.map",
     "static/js/2.e2d11e17.chunk.js": "/tpb-search/static/js/2.e2d11e17.chunk.js",
     "static/js/2.e2d11e17.chunk.js.map": "/tpb-search/static/js/2.e2d11e17.chunk.js.map",
     "index.html": "/tpb-search/index.html",
-    "precache-manifest.ba698b435766385be9484a0231d6c466.js": "/tpb-search/precache-manifest.ba698b435766385be9484a0231d6c466.js",
+    "precache-manifest.8bbbfa1b4387e9b1740ee79640e630d9.js": "/tpb-search/precache-manifest.8bbbfa1b4387e9b1740ee79640e630d9.js",
     "service-worker.js": "/tpb-search/service-worker.js",
     "static/css/main.c633f539.chunk.css.map": "/tpb-search/static/css/main.c633f539.chunk.css.map",
     "static/js/2.e2d11e17.chunk.js.LICENSE.txt": "/tpb-search/static/js/2.e2d11e17.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.213bb9d4.js",
     "static/js/2.e2d11e17.chunk.js",
     "static/css/main.c633f539.chunk.css",
-    "static/js/main.8de8ebef.chunk.js"
+    "static/js/main.77d89f0a.chunk.js"
   ]
 }
