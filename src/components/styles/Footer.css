@@ -1,0 +1,36 @@
+.Footer-component {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.theme1 footer {
+  background-color: #e8daef;
+  font-family: times, arial;
+  display: block;
+  text-align: center;
+  color: black;
+  padding: 0 0 0.5em 0;
+  text-shadow: 0.01em 0.01em 0.01em #e8daef, 0.01em 0.01em 0.01em black;
+}
+.theme1 footer hr {
+  border-top: 0.01em double black;
+  margin: 0 0 0.5em 0;
+}
+
+.theme2 footer {
+  background-color: #222;
+  font-family: times, arial;
+  display: block;
+  text-align: center;
+  color: floralwhite;
+  padding: 0 0 0.5em 0;
+  text-shadow: 0.01em 0.01em 0.01em #222, 0.01em 0.01em 0.01em floralwhite;
+}
+.theme2 footer hr {
+  border-top: 0.01em double black;
+  margin: 0 0 0.5em 0;
+}
+
+/*# sourceMappingURL=Footer.css.map */

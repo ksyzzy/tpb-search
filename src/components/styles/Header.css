@@ -1,0 +1,47 @@
+hr {
+  border-top: 0.01em double black;
+  margin: 0.5em 0 0 0;
+}
+
+header {
+  text-align: center;
+  font-family: monospace, times, serif;
+  font-size: 2em;
+  text-decoration: none;
+  display: block;
+  padding: 0.5em 0 0 0;
+}
+
+.theme1 ::-moz-selection {
+  background: #a569bd;
+  color: #e8daef;
+  text-shadow: none;
+}
+.theme1 ::-selection {
+  background: #a569bd;
+  color: #e8daef;
+  text-shadow: none;
+}
+.theme1 header {
+  background-color: #e8daef;
+  color: black;
+  text-shadow: 2px 2px 1px #e8daef, 2px 2px 1px black;
+}
+
+.theme2 ::-moz-selection {
+  background: cadetblue;
+  color: #222;
+  text-shadow: none;
+}
+.theme2 ::-selection {
+  background: cadetblue;
+  color: #222;
+  text-shadow: none;
+}
+.theme2 header {
+  background-color: #222;
+  color: floralwhite;
+  text-shadow: 2px 2px 1px #222, 2px 2px 1px floralwhite;
+}
+
+/*# sourceMappingURL=Header.css.map */

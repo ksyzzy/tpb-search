@@ -1,0 +1,82 @@
+@import "core";
+@each $theme, $map in $themes {
+    ##{$theme} {
+        background-color: map-get($map, appColor);
+    }
+    .App {
+        &.#{$theme} {
+            margin-top: 5%;
+            margin-left: 25%;
+            font-size: 1.5em;
+            font-family: arial, times;
+            background-color: map-get($map, appColor);
+
+            #input {
+                width: 500px;
+                color: black;
+                background-color: white;
+                border-radius: 0.5em;
+                transition-duration: 0.3s;
+                border: 2px solid map-get($map, textColor);
+            }
+
+            #input:hover {
+                color: map-get($map, backgroundColor);
+                background-color: map-get($map, selectionColor);
+                border: 2px solid map-get($map, textColor);
+            }
+
+            #input:active {
+                color: map-get($map, selectionColor);
+                background-color: map-get($map, backgroundColor);
+                border: 2px solid map-get($map, selectionColor);
+            }
+
+            label {
+                display: inline-block;
+                padding-right: 0.5em;
+                font-family: times;
+                color: map-get($map, textColor);
+            }
+
+            .radioLabel {
+                font-size: 0.75em;
+            }
+
+            .radios {
+                display: block;
+                margin-top: 1em;
+            }
+
+            #submitbtn {
+                margin: 1.5em 30%;
+                display: block;
+                color: map-get($map, textColor); 
+                background-color: map-get($map, backgroundColor);
+                transition: 0.3s;
+                font-size: 1em;
+                border: 2px solid map-get($map, textColor);
+            }
+
+            #submitbtn:hover {
+                background-color: map-get($map, selectionColor);
+                color: map-get($map, backgroundColor);
+            }
+
+            #submitbtn:active {
+                background-color: map-get($map, backgroundColor);
+                color: coral;
+            }
+
+            .item {
+                display: block;
+                margin: 0 15%;
+            }
+
+            input[type="radio"] {
+                position: absolute;
+                left: 60%;
+            }
+        }
+    }
+}

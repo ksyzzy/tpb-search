@@ -1,0 +1,19 @@
+#theme1 {
+  background-color: floralwhite;
+}
+
+.history-component.theme1 {
+  text-align: center;
+  color: black;
+}
+
+#theme2 {
+  background-color: #111;
+}
+
+.history-component.theme2 {
+  text-align: center;
+  color: floralwhite;
+}
+
+/*# sourceMappingURL=History.css.map */

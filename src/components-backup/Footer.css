@@ -1,0 +1,36 @@
+.Footer-component {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.theme1 footer {
+  background-color: cadetblue;
+  font-family: times, arial;
+  display: block;
+  text-align: center;
+  color: black;
+  padding: 0 0 0.5em 0;
+  text-shadow: 2px 1px 1px floralwhite, 2px 2px 1px cadetblue;
+}
+.theme1 footer hr {
+  border-top: 0.01em double black;
+  margin: 0 0 0.5em 0;
+}
+
+.theme2 footer {
+  background-color: #222;
+  font-family: times, arial;
+  display: block;
+  text-align: center;
+  color: white;
+  padding: 0 0 0.5em 0;
+  text-shadow: 2px 1px 1px floralwhite, 2px 2px 1px cadetblue;
+}
+.theme2 footer hr {
+  border-top: 0.01em double black;
+  margin: 0 0 0.5em 0;
+}
+
+/*# sourceMappingURL=Footer.css.map */

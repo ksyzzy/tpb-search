@@ -1,0 +1,155 @@
+.theme1 .sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: cadetblue;
+  overflow-x: hidden;
+  padding-top: 0.5em;
+  transition: 0.5s;
+  border-right: 0.01em solid black;
+}
+.theme1 .sidebar nav a {
+  padding: 0.25em 0.75em;
+  text-decoration: none;
+  border-bottom: 0.05em solid transparent;
+  font-size: 2em;
+  color: black;
+  text-shadow: 0.01em 0.01em 0.01em black, 0.07em 0.07em 0.01em black;
+  display: block;
+  transition: color 0.3s, border-color 0.5s;
+}
+.theme1 .sidebar nav a:hover {
+  color: floralwhite;
+  border-color: floralwhite;
+}
+.theme1 .sidebar nav a:hover::before {
+  content: ">";
+}
+.theme1 .colorbar {
+  height: 100%;
+  border-left: 3em solid cadetblue;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  border-right: 0.01em solid black;
+}
+.theme1 .Menu-button {
+  height: 100%;
+  left: 0;
+  color: black;
+}
+.theme1 .openbtn {
+  font-size: 1.5em;
+  margin-left: 0;
+  cursor: pointer;
+  background-color: cadetblue;
+  color: white;
+  padding: 0.25em 0.5em;
+  border: 0.01em solid black;
+  transition: 0.5s;
+}
+.theme1 .openbtn:hover {
+  background-color: coral;
+}
+.theme1 .themebtn {
+  border: none;
+  background-color: floralwhite;
+  color: black;
+  margin: 0.5em auto;
+  display: block;
+  font-size: 1.75em;
+  text-decoration: none;
+  text-shadow: 1px 1px 1px black;
+  transition-duration: 0.3s;
+}
+.theme1 .themebtn:hover {
+  background-color: coral;
+  color: white;
+}
+.theme1 .themebtn:active {
+  background-color: cadetblue;
+  color: white;
+}
+
+.theme2 .sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: grey;
+  overflow-x: hidden;
+  padding-top: 0.5em;
+  transition: 0.5s;
+  border-right: 0.01em solid black;
+}
+.theme2 .sidebar nav a {
+  padding: 0.25em 0.75em;
+  text-decoration: none;
+  border-bottom: 0.05em solid transparent;
+  font-size: 2em;
+  color: white;
+  text-shadow: 0.01em 0.01em 0.01em black, 0.07em 0.07em 0.01em black;
+  display: block;
+  transition: color 0.3s, border-color 0.5s;
+}
+.theme2 .sidebar nav a:hover {
+  color: floralwhite;
+  border-color: floralwhite;
+}
+.theme2 .sidebar nav a:hover::before {
+  content: ">";
+}
+.theme2 .colorbar {
+  height: 100%;
+  border-left: 3em solid cadetblue;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  border-right: 0.01em solid black;
+}
+.theme2 .Menu-button {
+  height: 100%;
+  left: 0;
+  color: white;
+}
+.theme2 .openbtn {
+  font-size: 1.5em;
+  margin-left: 0;
+  cursor: pointer;
+  background-color: grey;
+  color: white;
+  padding: 0.25em 0.5em;
+  border: 0.01em solid black;
+  transition: 0.5s;
+}
+.theme2 .openbtn:hover {
+  background-color: coral;
+}
+.theme2 .themebtn {
+  border: none;
+  background-color: floralwhite;
+  color: black;
+  margin: 0.5em auto;
+  display: block;
+  font-size: 1.75em;
+  text-decoration: none;
+  text-shadow: 1px 1px 1px black;
+  transition-duration: 0.3s;
+}
+.theme2 .themebtn:hover {
+  background-color: coral;
+  color: white;
+}
+.theme2 .themebtn:active {
+  background-color: grey;
+  color: white;
+}
+
+/*# sourceMappingURL=Menu.css.map */

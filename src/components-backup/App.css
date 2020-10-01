@@ -1,0 +1,76 @@
+body {
+  background-color: cadetblue;
+}
+
+.App {
+  margin-top: 5%;
+  margin-left: 25%;
+  font-size: 1.5em;
+  font-family: arial, times;
+}
+
+#input {
+  width: 500px;
+  color: black;
+  background-color: white;
+  border-radius: 0.5em;
+  transition-duration: 0.3s;
+  border: 2px solid black;
+}
+
+#input:hover {
+  background-color: coral;
+  border: 2px solid floralwhite;
+}
+
+#input:active {
+  background-color: cadetblue;
+  border: 2px solid coral;
+}
+
+label {
+  display: inline-block;
+  padding-right: 0.5em;
+  font-family: times;
+}
+
+.radioLabel {
+  font-size: 0.75em;
+}
+
+.radios {
+  display: block;
+  margin-top: 1em;
+}
+
+#submitbtn {
+  margin: 1.5em 30%;
+  display: block;
+  color: black;
+  background-color: floralwhite;
+  transition: 0.3s;
+  font-size: 1em;
+  border: 2px solid black;
+}
+
+#submitbtn:hover {
+  background-color: coral;
+  color: floralwhite;
+}
+
+#submitbtn:active {
+  background-color: cadetblue;
+  color: coral;
+}
+
+.item {
+  display: block;
+  margin: 0 15%;
+}
+
+input[type=radio] {
+  position: absolute;
+  left: 60%;
+}
+
+/*# sourceMappingURL=App.css.map */
