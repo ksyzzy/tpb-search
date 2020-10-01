@@ -7,8 +7,18 @@ import { ajaxSearch } from '../logic/tpbConnection';
 export class Result extends React.Component {
 
     componentDidMount() {
-        ajaxSearch("cokolwiek");
-        this.props.appendToHistory(this.props.input, this.props.connection, true);    
+        switch(this.props.connection) {
+            case "ajax":
+                ajaxSearch(this.props.input);
+                this.props.appendToHistory(this.props.input, this.props.connection, true);    
+                break;
+            case "imdb":
+                break;
+            case "node":
+                break;
+            default:
+                break;
+        }
     };
 
     render() {
