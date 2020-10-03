@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
 import './styles/App.css';
-import { setAjaxRequest, setImdbRequest, setNodeRequest, updateInput } from '../actions/actions.js';
+import { setAjaxRequest, setImdbRequest, setNodeRequest, updateInput, checkResult, updateResult } from '../actions/actions.js';
 
 export class App extends React.Component {
     handleInputChange(event) {
@@ -13,6 +13,8 @@ export class App extends React.Component {
         document.body.id = this.props.theme;
         this.props.updateInput("");
         this.props.setAjaxRequest();
+        this.props.checkResult(false);
+        this.props.updateResult(null);
     };
 
     submitForm(event) {
@@ -51,7 +53,9 @@ const mapStateToProps = (state) => {
     return {
         input: state.input,
         connection: state.connection,
-        theme: state.theme
+        theme: state.theme,
+        result: state.result,
+        gotResult: state.gotResult
     }
 };
 
@@ -59,7 +63,9 @@ const mapDispatchToProps = (dispatch) => ({
     setAjaxRequest: () => dispatch(setAjaxRequest()),
     setImdbRequest: () => dispatch(setImdbRequest()),
     setNodeRequest: () => dispatch(setNodeRequest()),
-    updateInput: (input) => dispatch(updateInput(input))
+    updateInput: (input) => dispatch(updateInput(input)),
+    checkResult: (value) => dispatch(checkResult(value)),
+    updateResult: (result) => dispatch(updateResult(result))
 });
 
 export default withRouter(connect(mapStateToProps, mapDispatchToProps)(App));

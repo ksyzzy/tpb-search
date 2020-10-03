@@ -1,5 +1,5 @@
 import { combineReducers } from 'redux';
-import { TOGGLE_THEME, SET_AJAX_REQUEST, SET_IMDB_REQUEST, SET_NODE_REQUEST, UPDATE_INPUT, TOGGLE_SIDEMENU, UPDATE_HISTORY } from './actions';
+import { TOGGLE_THEME, SET_AJAX_REQUEST, SET_IMDB_REQUEST, SET_NODE_REQUEST, UPDATE_INPUT, TOGGLE_SIDEMENU, UPDATE_HISTORY, REQUEST, UPDATE_RESULT } from './actions';
 
 function theme(state = 'theme1', action) {
     switch(action.type) {
@@ -50,6 +50,24 @@ function history(state = [], action) {
     }
 };
 
-const appReducer = combineReducers({input, connection, theme, sidemenuOpen, history});
+function gotResult(state = false, action) {
+    switch(action.type) {
+        case REQUEST:
+            return action.gotResult;
+        default:
+            return state;
+    }
+};
+
+function result(state = null, action) {
+    switch(action.type) {
+        case UPDATE_RESULT:
+            return action.result;
+        default:
+            return state;
+    }
+};
+
+const appReducer = combineReducers({input, connection, theme, sidemenuOpen, history, gotResult, result});
 
 export default appReducer;

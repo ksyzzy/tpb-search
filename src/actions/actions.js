@@ -5,6 +5,8 @@ export const SET_NODE_REQUEST = 'SET_NODE_REQUEST';
 export const UPDATE_INPUT = 'UPDATE_INPUT';
 export const TOGGLE_SIDEMENU = 'TOGGLE_SIDEMENU';
 export const UPDATE_HISTORY = 'UPDATE_HISTORY';
+export const REQUEST = "REQUEST";
+export const UPDATE_RESULT = "UPDATE_RESULT";
 
 export function toggleLightTheme() {
     return { type: TOGGLE_THEME, theme: 'theme1' };
@@ -40,4 +42,12 @@ export function closeSidemenu() {
 
 export function appendToHistory(title, connection, result) {
     return { type: UPDATE_HISTORY, item: {title, connection, result} };
+};
+
+export function checkResult(result) {
+    return { type: REQUEST, gotResult: result};
+};
+
+export function updateResult(text) {
+    return { type: UPDATE_RESULT, result : text };
 };

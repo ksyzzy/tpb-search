@@ -1,3 +1,24 @@
-h1 {
-    text-align: center;
+@import './core';
+
+@each $theme, $map in $themes {
+    .result-component {
+        font-size: 2em;
+        line-height: 1.75em;
+        text-align: center;
+        &.#{$theme} {
+            color: map-get($map, textColor);
+
+            ul {
+                list-style-type: none;
+                display: inline-block;
+                text-align: left;
+            }
+
+            li {
+            }
+            i {
+                display: block;
+            }
+        }      
+    }
 }

@@ -18,7 +18,9 @@ const initialState = {
     connection: 'ajax',
     theme: 'theme1',
     sidemenuOpen: false,
-    history: []
+    history: [],
+    gotResult: false,
+    result: null
 };
 
 const store = createStore(appReducer, initialState);

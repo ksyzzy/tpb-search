@@ -1,5 +1,35 @@
-h1 {
+.result-component {
+  font-size: 2em;
+  line-height: 1.75em;
   text-align: center;
+}
+.result-component.theme1 {
+  color: black;
+}
+.result-component.theme1 ul {
+  list-style-type: none;
+  display: inline-block;
+  text-align: left;
+}
+.result-component.theme1 i {
+  display: block;
+}
+
+.result-component {
+  font-size: 2em;
+  line-height: 1.75em;
+  text-align: center;
+}
+.result-component.theme2 {
+  color: floralwhite;
+}
+.result-component.theme2 ul {
+  list-style-type: none;
+  display: inline-block;
+  text-align: left;
+}
+.result-component.theme2 i {
+  display: block;
 }
 
 /*# sourceMappingURL=Result.css.map */
