@@ -6,15 +6,17 @@ import './styles/Menu.css';
 
 export class Menu extends React.Component {
     toggleMenu = () => {
+        let sidebar = document.getElementsByClassName("sidebar")[0];
+        let openbtn = document.getElementsByClassName("openbtn")[0];
         switch(this.props.sidemenuOpen) {
             case true:
-                document.getElementsByClassName("sidebar")[0].style.width = "0";
-                document.getElementsByClassName("openbtn")[0].style.marginLeft = "0%";
+                sidebar.style.width = "0%";
+                openbtn.style.marginLeft = "0%";
                 this.props.closeSidemenu();
                 break;
             case false:
-                document.getElementsByClassName("sidebar")[0].style.width = "20%";
-                document.getElementsByClassName("openbtn")[0].style.marginLeft = "20%";
+                sidebar.style.width = "20%";
+                openbtn.style.marginLeft = "20%";
                 this.props.openSidemenu();
                 break;
             default:

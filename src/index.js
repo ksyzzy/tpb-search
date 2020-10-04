@@ -29,26 +29,26 @@ ReactDOM.render(
 <Provider store={store}>
   <React.StrictMode>
     <Router>
-    <Switch>
-        <Route path="/history">
-            <Header />
-            <Menu />
-            <History />
-            <Footer />
-        </Route>
-        <Route path="/result">
-            <Header />
-            <Menu />
-            <Result />
-            <Footer />
-        </Route>
-        <Route path="/">
-            <Header />
-            <Menu />
-            <App />
-            <Footer />
-        </Route>
-    </Switch>
+        <Switch>
+            <Route path="/history">
+                <Header />
+                <Menu />
+                <History />
+                <Footer />
+            </Route>
+            <Route path="/result">
+                <Header />
+                <Menu />
+                <Result />
+                <Footer />
+            </Route>
+            <Route path="/">
+                <Header />
+                <Menu />
+                <App />
+                <Footer />
+            </Route>
+        </Switch>
     </Router>
   </React.StrictMode>
 </Provider>,

@@ -18,12 +18,17 @@ export class Result extends React.Component {
                 this.props.checkResult(true);
                 break;
             case "imdb":
-                let imdbId = await imdbSearch(this.props.input);
-                return;
-                response = await ajaxSearch(imdbId);
-                this.props.updateResult(response);
-                this.props.appendToHistory(this.props.input, this.props.connection, this.props.result);
-                this.props.checkResult(true);
+                try {
+                    let imdbId = await imdbSearch(this.props.input);
+                    response = await ajaxSearch(imdbId);
+                    this.props.updateResult(response);
+                } catch(error) {
+                    if (error === "Movie not found") this.props.updateResult(false);
+                    else console.log(error);
+                } finally {
+                    this.props.appendToHistory(this.props.input, this.props.connection, this.props.result);
+                    this.props.checkResult(true);
+                }
                 break;
             case "node":
                 break;

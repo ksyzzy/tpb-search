@@ -6,18 +6,24 @@ export async function ajaxSearch(title) {
         if (data[0].name === "No results returned") return false;
             else return true;
     } catch (error) {
-        console.log(error);
+        alert(error);
     }
 };
 
+function imdbHelper(title) {
+    let imdbId = require('imdb-id');
+    return new Promise(async (resolve, reject) => {
+        try {
+            let result = await imdbId(title);
+            resolve(result);
+        } catch(error) {
+            reject(error);
+        }
+    });
+}
 
 export async function imdbSearch(title) {
-    let imdbId = require('imdb-id');
-    let result = await imdbId(title, function(err, imdb_id) {
-      if (!err) {
-          console.log(imdb_id);
-          return imdb_id;
-      }
-    });
-    return result;
+        let imdbId = require('imdb-id');
+        let result = await imdbHelper(title);
+        return result;
 };
