@@ -27,3 +27,9 @@ export async function imdbSearch(title) {
         let result = await imdbHelper(title);
         return result;
 };
+
+export async function nodeSearch(title) {
+    const response = await fetch('https://equinox-brook-push.glitch.me/api/movie?' + new URLSearchParams({title}));
+    const result = await response.json();
+    return result;
+};

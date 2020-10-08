@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { appendToHistory, checkResult, updateResult } from '../actions/actions';
 import './styles/Result.css';
-import { ajaxSearch, imdbSearch } from '../logic/tpbConnection'; 
+import { ajaxSearch, imdbSearch, nodeSearch } from '../logic/tpbConnection'; 
 
 export class Result extends React.Component {
 
@@ -31,6 +31,16 @@ export class Result extends React.Component {
                 }
                 break;
             case "node":
+                try {
+                    response = await nodeSearch(this.props.input);
+                    if (response.error) this.props.updateResult(false);
+                    else this.props.updateResult(true);
+                } catch(error) {
+                    console.log(error);
+                } finally {
+                    this.props.appendToHistory(this.props.input, this.props.connection, this.props.result);
+                    this.props.checkResult(true);
+                }
                 break;
             default:
                 break;
