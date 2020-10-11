@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/tpb-search/static/css/main.fdeedba6.chunk.css",
+    "main.css": "/tpb-search/static/css/main.b9b7657b.chunk.css",
     "main.js": "/tpb-search/static/js/main.dcbb7a72.chunk.js",
     "main.js.map": "/tpb-search/static/js/main.dcbb7a72.chunk.js.map",
     "runtime-main.js": "/tpb-search/static/js/runtime-main.213bb9d4.js",
@@ -8,15 +8,15 @@
     "static/js/2.b53efb12.chunk.js": "/tpb-search/static/js/2.b53efb12.chunk.js",
     "static/js/2.b53efb12.chunk.js.map": "/tpb-search/static/js/2.b53efb12.chunk.js.map",
     "index.html": "/tpb-search/index.html",
-    "precache-manifest.8e43df6350e65704e265f4b4b82b5ed2.js": "/tpb-search/precache-manifest.8e43df6350e65704e265f4b4b82b5ed2.js",
+    "precache-manifest.7d81cfb52f53e58af58450c334bf14e4.js": "/tpb-search/precache-manifest.7d81cfb52f53e58af58450c334bf14e4.js",
     "service-worker.js": "/tpb-search/service-worker.js",
-    "static/css/main.fdeedba6.chunk.css.map": "/tpb-search/static/css/main.fdeedba6.chunk.css.map",
+    "static/css/main.b9b7657b.chunk.css.map": "/tpb-search/static/css/main.b9b7657b.chunk.css.map",
     "static/js/2.b53efb12.chunk.js.LICENSE.txt": "/tpb-search/static/js/2.b53efb12.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.213bb9d4.js",
     "static/js/2.b53efb12.chunk.js",
-    "static/css/main.fdeedba6.chunk.css",
+    "static/css/main.b9b7657b.chunk.css",
     "static/js/main.dcbb7a72.chunk.js"
   ]
 }
