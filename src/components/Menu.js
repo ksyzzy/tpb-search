@@ -10,13 +10,13 @@ export class Menu extends React.Component {
         let openbtn = document.getElementsByClassName("openbtn")[0];
         switch(this.props.sidemenuOpen) {
             case true:
-                sidebar.style.width = "0%";
-                openbtn.style.marginLeft = "0%";
+                sidebar.classList.remove('active');
+                openbtn.classList.remove('active');
                 this.props.closeSidemenu();
                 break;
             case false:
-                sidebar.style.width = "20%";
-                openbtn.style.marginLeft = "20%";
+                sidebar.classList.add('active');
+                openbtn.classList.add('active');
                 this.props.openSidemenu();
                 break;
             default:

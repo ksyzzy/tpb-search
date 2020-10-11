@@ -134,4 +134,35 @@
   left: 60%;
 }
 
+@media only screen and (max-width: 600px) {
+  .App.theme1 #input {
+    width: 250px;
+  }
+  .App.theme1 input[type=radio] {
+    left: 80%;
+  }
+  .App.theme2 #input {
+    width: 250px;
+  }
+  .App.theme2 input[type=radio] {
+    left: 80%;
+  }
+}
+@media only screen and (min-width: 1080px) {
+  .App.theme1 #input {
+    width: 700px;
+  }
+  .App.theme2 #input {
+    width: 700px;
+  }
+}
+@media only screen and (min-width: 2160px) {
+  .App.theme1 #input {
+    width: 1300px;
+  }
+  .App.theme2 #input {
+    width: 1300px;
+  }
+}
+
 /*# sourceMappingURL=App.css.map */

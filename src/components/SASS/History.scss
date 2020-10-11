@@ -8,6 +8,7 @@
     .history-component {
         &.#{$theme} {
             text-align: center;
+            list-style-position: inside;
             color: map-get($map, textColor);
         }
     }

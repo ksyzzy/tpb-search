@@ -4,6 +4,7 @@
 
 .history-component.theme1 {
   text-align: center;
+  list-style-position: inside;
   color: black;
 }
 
@@ -13,6 +14,7 @@
 
 .history-component.theme2 {
   text-align: center;
+  list-style-position: inside;
   color: floralwhite;
 }
 

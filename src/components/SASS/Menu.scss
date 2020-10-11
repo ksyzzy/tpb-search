@@ -4,16 +4,20 @@
     .#{$theme} {
         .sidebar {
             height: 100%;
-            width: 0;
             position: fixed;
             z-index: 1;
             top: 0;
-            left: 0;
+            width: 20%;
+            left: -100%;
             background-color: map-get($map, backgroundColor);
             overflow-x: hidden;
             padding-top: 0.5em;
-            transition: 0.5s;
+            transition: 0.2s linear;
             border-right: 0.01em solid black;
+
+            &.active {
+                left: 0;
+            }
 
             nav {
                 a {
@@ -63,7 +67,11 @@
             color: map-get($map, textColor);
             padding: 0.25em 0.5em;
             border: 0.01em solid black;
-            transition: 0.5s;
+            transition: 0.2s linear;
+
+            &.active {
+                margin-left: 20%;
+            }
         }
 
         .openbtn:hover {
@@ -93,3 +101,52 @@
         }
     }
 }
+
+@media screen and (max-width: 600px) {
+    @each $theme, $map in $themes {
+        .#{$theme} {
+            .sidebar {
+                width: 80%;            
+            }
+
+            .openbtn {
+                &.active {
+                    margin-left: 80%;
+                }
+            }
+        }
+    } 
+}
+
+@media screen and (min-width: 1080px) {
+    @each $theme, $map in $themes {
+        .#{$theme} {
+            .sidebar {
+                width: 15%;
+            }
+
+            .openbtn {
+                &.active {
+                    margin-left: 15%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 2160px) {
+    @each $theme, $map in $themes {
+        .#{$theme} {
+            .sidebar {
+                width: 8%;
+            }
+
+            .openbtn {
+                &.active {
+                    margin-left: 8%;
+                }
+            }
+        }
+    }
+}
+

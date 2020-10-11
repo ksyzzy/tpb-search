@@ -1,15 +1,18 @@
 .theme1 .sidebar {
   height: 100%;
-  width: 0;
   position: fixed;
   z-index: 1;
   top: 0;
-  left: 0;
+  width: 20%;
+  left: -100%;
   background-color: #e8daef;
   overflow-x: hidden;
   padding-top: 0.5em;
-  transition: 0.5s;
+  transition: 0.2s linear;
   border-right: 0.01em solid black;
+}
+.theme1 .sidebar.active {
+  left: 0;
 }
 .theme1 .sidebar nav a {
   padding: 0.25em 0.75em;
@@ -50,7 +53,10 @@
   color: black;
   padding: 0.25em 0.5em;
   border: 0.01em solid black;
-  transition: 0.5s;
+  transition: 0.2s linear;
+}
+.theme1 .openbtn.active {
+  margin-left: 20%;
 }
 .theme1 .openbtn:hover {
   background-color: #a569bd;
@@ -77,16 +83,19 @@
 
 .theme2 .sidebar {
   height: 100%;
-  width: 0;
   position: fixed;
   z-index: 1;
   top: 0;
-  left: 0;
+  width: 20%;
+  left: -100%;
   background-color: #222;
   overflow-x: hidden;
   padding-top: 0.5em;
-  transition: 0.5s;
+  transition: 0.2s linear;
   border-right: 0.01em solid black;
+}
+.theme2 .sidebar.active {
+  left: 0;
 }
 .theme2 .sidebar nav a {
   padding: 0.25em 0.75em;
@@ -127,7 +136,10 @@
   color: floralwhite;
   padding: 0.25em 0.5em;
   border: 0.01em solid black;
-  transition: 0.5s;
+  transition: 0.2s linear;
+}
+.theme2 .openbtn.active {
+  margin-left: 20%;
 }
 .theme2 .openbtn:hover {
   background-color: cadetblue;
@@ -150,6 +162,52 @@
 .theme2 .themebtn:active {
   background-color: #222;
   color: cadetblue;
+}
+
+@media screen and (max-width: 600px) {
+  .theme1 .sidebar {
+    width: 80%;
+  }
+  .theme1 .openbtn.active {
+    margin-left: 80%;
+  }
+
+  .theme2 .sidebar {
+    width: 80%;
+  }
+  .theme2 .openbtn.active {
+    margin-left: 80%;
+  }
+}
+@media screen and (min-width: 1080px) {
+  .theme1 .sidebar {
+    width: 15%;
+  }
+  .theme1 .openbtn.active {
+    margin-left: 15%;
+  }
+
+  .theme2 .sidebar {
+    width: 15%;
+  }
+  .theme2 .openbtn.active {
+    margin-left: 15%;
+  }
+}
+@media screen and (min-width: 2160px) {
+  .theme1 .sidebar {
+    width: 8%;
+  }
+  .theme1 .openbtn.active {
+    margin-left: 8%;
+  }
+
+  .theme2 .sidebar {
+    width: 8%;
+  }
+  .theme2 .openbtn.active {
+    margin-left: 8%;
+  }
 }
 
 /*# sourceMappingURL=Menu.css.map */
